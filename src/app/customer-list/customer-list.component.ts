@@ -11,7 +11,7 @@ export class CustomerListComponent {
     {
       customerNo: 1,
       name: 'Rahuld Dravid',
-      address: '',
+      address: '/',
       city: 'Banglaore',
       state: 'Karnataka',
       country: 'India',
@@ -19,7 +19,7 @@ export class CustomerListComponent {
     {
       customerNo: 2,
       name: 'Sachin Tendulkar',
-      address: '',
+      address: '/',
       city: 'Mumbai',
       state: 'Maharastra',
       country: 'India',
@@ -27,15 +27,15 @@ export class CustomerListComponent {
     {
       customerNo: 3,
       name: 'Saurrav Ganguly',
-      address: '',
+      address: '/',
       city: 'Kolkata',
       state: 'West Bengal',
       country: 'India',
     },
     {
       customerNo: 4,
-      name: 'Mahendra Singh Dhoni',
-      address: '',
+      name: 'Mahendra Singh',
+      address: '/',
       city: 'Ranchi',
       state: 'Bihar',
       country: 'India',
@@ -43,7 +43,7 @@ export class CustomerListComponent {
     {
       customerNo: 5,
       name: 'Virat Kohli',
-      address: '',
+      address: '/',
       city: 'Delhi',
       state: 'Delhi',
       country: 'India',

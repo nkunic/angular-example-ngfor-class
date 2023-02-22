@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+table {
+  border: 1px solid black;
+
+  thead {
+    tr {
+      font-weight: bold;
+      background-color: gray;
+    }
+  }
+
+  tr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &.row_odd {
+      background-color: lightgray;
+    }
+  }
+
+  tr + tr {
+    border-top: 1px solid black;
+  }
+
+  th,
+  td {
+    padding: 0.625rem;
+    &:not(.cell_first) {
+      width: 10rem;
+    }
+    &.cell_first {
+      width: 3rem;
+      text-align: center;
+    }
+  }
+
+  td + td {
+    border-left: 1px solid black;
+  }
+}

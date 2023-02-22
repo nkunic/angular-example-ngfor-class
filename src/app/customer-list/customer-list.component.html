@@ -3,7 +3,7 @@
 <table class="table">
   <thead>
     <tr>
-      <th>No</th>
+      <th class="cell_first">No</th>
       <th>Name</th>
       <th>Address</th>
       <th>City</th>
@@ -11,8 +11,19 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let customer of customers">
-      <td>{{ customer.customerNo }}</td>
+    <tr
+      *ngFor="
+        let customer of customers;
+        let i = index;
+        let even = even;
+        let odd = odd
+      "
+      [ngClass]="{
+        row_odd: odd,
+        row_even: even
+      }"
+    >
+      <td class="cell_first">{{ customer.customerNo }}</td>
       <td>{{ customer.name }}</td>
       <td>{{ customer.address }}</td>
       <td>{{ customer.city }}</td>
