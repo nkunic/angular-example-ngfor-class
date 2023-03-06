@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { CustomerListModule } from './customer-list/customer-list.module';
+import { CustomerListModule } from './components/customer-list/customer-list.module';
 
 import { AppComponent } from './app.component';
 
